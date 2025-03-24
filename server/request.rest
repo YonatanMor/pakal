@@ -1,0 +1,26 @@
+#home-page 
+GET http://localhost:3000/
+###
+
+#users list
+GET http://localhost:3000/users
+###
+
+# sign up
+POST http://localhost:3000/users/signup
+Content-Type: application/json
+
+{"name":"Yoni", "password":"123"}
+###
+
+# login
+POST http://localhost:3000/user/login
+Content-Type: application/json
+
+{"name":"Yoni", "password":"123"}
+###
+
+# restricted_area
+POST http://localhost:3000/restricted_area
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IllvbmkiLCJpYXQiOjE3NDI3OTc2MDksImV4cCI6MTc0Mjc5NzY2OX0.BvYmohKDEwIupjkFfMMsfb-mb0T-DePMlGWVfGHZBok
